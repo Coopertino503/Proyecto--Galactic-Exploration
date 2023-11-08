@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/styles/planetinfo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script  src="espacio.js"></script> -->
+<div class="solar-container">
+
+    <div class="solar-caption solar-mercury">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Mercury</div>
+      
+      <div class="solar-card solar-mercury">
+    
+        <div class="solar-name">Mercury</div>
+        <div class="card-subtitle">The Swiftest Planet</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">57 909 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">4 879.4 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">88 Earth days</div>
+    
+      </div>
+    
+    </div>
+
+
+    <div class="solar-caption solar-venus">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Venus</div>
+      <div class="solar-card solar-venus">
+        <div class="solar-name">Venus</div>
+        <div class="card-subtitle">Planetary Hot Spot</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">108 160 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">12 103.6 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">225 Earth days</div>
+      </div>
+    </div>
+
+
+    <div class="solar-caption solar-earth">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Earth</div>
+      
+      <div class="solar-card solar-earth">
+        <div class="solar-name">Earth</div>
+        <div class="card-subtitle">Our Home Planet</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">149 600 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">12 756.3 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">365 Earth days</div>
+      </div>
+
+    </div>
+
+
+    <div class="solar-caption solar-mars">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Mars</div>
+      <div class="solar-card solar-mars">
+        <div class="solar-name">Mars</div>
+        <div class="card-subtitle">The Red Planet</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">227 990 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">6 792.4 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">687 Earth days</div>
+      </div>
+    </div>
+
+
+    <div class="solar-caption solar-jupiter">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Jupiter</div>
+      <div class="solar-card solar-jupiter">
+        <div class="solar-name">Jupiter</div>
+        <div class="card-subtitle">Twice as massive as all the other planets combined</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">778 360 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">142 984 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">4 333 Earth days</div>
+      </div>
+    </div>
+
+
+    <div class="solar-caption solar-saturn">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Saturn</div>
+      <div class="solar-card solar-saturn">
+        <div class="solar-name">Saturn</div>
+        <div class="card-subtitle">Jewel of Our Solar System</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">1 433 500 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">120 536 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">10 759 Earth days</div>
+      </div>
+    </div>
+
+
+    <div class="solar-caption solar-uranus">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Uranus</div>
+      <div class="solar-card solar-uranus">
+        <div class="solar-name">Uranus</div>
+        <div class="card-subtitle">The Sideways Planet</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">2 872 400 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">51 118 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">30 687 Earth days</div>
+      </div>
+    </div>
+
+    
+    <div class="solar-caption solar-neptune">
+      <div class="solar-object"></div>
+      <div class="solar-name c-hand">Neptune</div>
+      <div class="solar-card solar-neptune">
+        <div class="solar-name">Neptune</div>
+        <div class="card-subtitle">The Windiest Planet</div>
+        <div class="card-head">Distance to the Sun</div>
+        <div class="card-body">4 498 400 000 km</div>
+        <div class="card-head">Average diameter</div>
+        <div class="card-body">49 528 km</div>
+        <div class="card-head">Length of year</div>
+        <div class="card-body">60 190 Earth days</div>
+      </div>
+    </div>
+
+<script>    
+    function preload() {
+        textura_tierra = loadImage('https://i.ibb.co/PD4LyP5/planeta.jpg');
+        textura_luna = loadImage('https://i.ibb.co/WPvVybx/luna.jpg');
+        textura_fondo_estrellas = loadImage("https://i.ibb.co/NNTFKmL/nocheHD.jpg")
+        textura_sol = loadImage("https://i.ibb.co/MVYyqsh/superficiesolar.jpg")
+        textura_mercurio = loadImage("https://i.ibb.co/zJ1bXmq/mercuriotextura.png")
+        textura_venus = loadImage("https://i.ibb.co/N3SKhKG/texturavenus.jpg")
+        textura_marte = loadImage("https://i.ibb.co/Rg0MqCP/texturamarte.jpg")
+        textura_jupiter = loadImage("https://i.ibb.co/DGW4R2g/texturajupiter.jpg")
+    }
+
+    function setup() {
+        createCanvas( 1685,1000, WEBGL);
+    }
+
+    function draw() {
+        // background("#00FF0000")
+        background("black")
+        
+        noStroke() //No dibujar la malla de las esferas
+
+        push()
+        rotateY(frameCount * 0.002);
+        texture(textura_sol)
+        sphere(1000)
+        pop()
+        
+
+        orbitControl() //Controlar con el mouse la camara
+
+        push()
+        rotateY(-frameCount * -0.02)//Traslación de mercurio al rededor del sol
+        translate(0, 0, 1250)//Distancia del centro del sol al centro de la mercurio
+        rotateY(-frameCount * 0.3 / 10)//rotacion de mercurio sobre su propio eje
+        texture(textura_mercurio);
+        sphere(60)
+        pop()
+
+        push()
+        rotateY(-frameCount * -0.009)//Traslación de venus al rededor del sol
+        translate(0, 0, 1450)//Distancia del centro del sol al centro de la venus
+        rotateY(-frameCount * 0.3 / 10)//rotacion de venus sobre su propio eje
+        texture(textura_venus);
+        sphere(80)
+        pop()
+
+        push()
+        rotateY(-frameCount * -0.0007)//Traslación de marte al rededor del sol
+        translate(0, 0, 1950)//Distancia del centro del sol al centro de la marte
+        rotateY(-frameCount * 0.01 / 11)//rotacion de marte sobre su propio eje
+        texture(textura_marte);
+        sphere(70)
+        pop()
+
+        push()
+        rotateY(-frameCount * -0.005)//Traslación de jupiter al rededor del sol
+        translate(0, 0, 2250)//Distancia del centro del sol al centro de la jupiter
+        rotateY(-frameCount * 0.003 / 14)//rotacion de jupiter sobre su propio eje
+        texture(textura_jupiter);
+        sphere(130)
+        pop()
+
+        push()
+        rotateY(-frameCount * -0.003)//Traslación de la tierra al rededor del sol
+        translate(0,0,1800)//Distancia del centro del sol al centro de la tierra
+        rotateY(-frameCount * 0.1 / 11); //rotación de la tierra sobre su propio eje
+        texture(textura_tierra); 
+        sphere(100)
+
+        push()
+        rotateY(-frameCount * 0.05 / 10);//Traslación de la luna al rededor de la tierra
+        translate(0, 0, 170)//Distancia del centro de la luna al centro de la tierra
+        rotateY(-frameCount * 0.05);//Rotación del la luna sobre su propio eje
+        texture(textura_luna);
+        sphere(25);
+        pop()
+    }
+
+</script>
+
+</body>
+</html>
